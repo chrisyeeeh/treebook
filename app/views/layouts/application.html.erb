@@ -35,9 +35,12 @@
 		</div>
 	</div>
 
+	<% if user_signed_in? %>
 	<%= link_to "Post a New Status", new_status_path, class:"btn btn-success"%>
+
 <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
+<% end %>
 	<div class="container">
 		<%= yield %>
 	</div>
